@@ -1,0 +1,41 @@
+/////////////////////////////////////////////////////
+//Testperf System configuration and station informations
+{
+UUT_MODEL=K31;//UUT information
+LOG=1;
+STATION_NAME=MPT1;
+TEST_FLOW_VER=1.1;
+STATION_SN=123;
+LOG_FILE_TYPE=TRACE_AE;
+LOG_FILE_PATH=\\10.117.2.6\mfg\mfg\data;
+AREA=A1;
+LINE=1;
+SECTOR=2;
+POST=123;
+EQUIPMENT=123;
+MEA_AUTO=0;
+GOLDEN_SERVER_CONNECT_ENABLE=0;
+GOLDEN_SERVER_CONNECT_IP=10.0.1.200;
+GOLDEN_SERVER_CONNECT_PORT=7711;
+GOLDEN_SERVER_CONNECT1_ENABLE=0;
+GOLDEN_SERVER_CONNECT1_IP=10.0.1.201;
+GOLDEN_SERVER_CONNECT1_PORT=7711;
+CONTROL_BOARD_CONNECT_ENABLE=0;
+CONTROL_BOARD_LED_SHOW=0;
+}
+
+{
+ITEM=WAIT_FOR_TEST: Waiting until the other side test finished;  
+FLAG=1;
+SPEC=testing.txt;
+LIMIT_UP=500;
+DIAG_CMD_TIME=0;//Wait operation finished time
+}
+
+
+{
+ITEM=RUN_DIAG_TOOL_NR: ARP buffer clear;  
+FLAG=1;  
+DIAG_CMD=arp.exe -d;
+DIAG_CMD_TIME=0;//Wait operation finished time
+}

@@ -1,0 +1,11 @@
+Model=K31;
+Station=MPT1;
+NUMBER=0  SN  16;
+NUMBER=1  MAC_ID  16;
+NUMBER=2  Test_Result  2;
+NUMBER=3  PC_Name  14;
+NUMBER=4  Test_Date  5;
+NUMBER=5  Test_Time  9;
+NUMBER=6  Cycle_Time  9;
+NUMBER=7  ErrorCode  8;
+NUMBER=8  Error_Desc  8;

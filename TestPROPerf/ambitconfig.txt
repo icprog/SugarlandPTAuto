@@ -1,0 +1,49 @@
+/////////////////////////////////////////////////////
+//Testperf System configuration and station informations
+{
+UUT_MODEL=K31;//UUT information
+LOG=1;
+STATION_NAME=qq;
+STATION_ID=815208;
+STATION_SN=123;
+LOG_FILE_TYPE=TRACE_AE;
+//LOG_FILE_PATH=\\10.117.2.5\mfg\mfg\data;
+AREA=A1;
+LINE=1;
+SECTOR=2;
+POST=123;
+EQUIPMENT=123;
+MEA_AUTO=0;
+CCD_AUTO=0;
+NCArt_FLAG=0;
+NART_COM=1IQ.bat;
+//CART_COM=E:\TestPROPerf for ALL(Use always)\Cart.bat;
+GOLDEN_SERVER_CONNECT_ENABLE=0;
+GOLDEN_SERVER_CONNECT_IP=10.0.1.12;
+GOLDEN_SERVER_CONNECT_PORT=7711;
+CONTROL_BOARD_CONNECT_ENABLE=0;
+CONTROL_BOARD_LED_SHOW=0;
+RETRY_NOTICE_FLAG=1;
+}
+{
+ITEM=RUN_DIAG_TOOL_NR: ARP buffer clear;  
+FLAG=1;  
+DIAG_CMD=arp.exe -d;
+DIAG_CMD_TIME=1;//Wait operation finished time
+}
+
+
+{
+ITEM=CHECK_UUT_INFO: Check wireless card_0 mac; 
+FLAG=1;
+SFIS_DATA=WIFIMAC0;
+RTY_VAL=1;
+UUT_CMD=tt.bat;//Get PropertyRadioMACAddress(first radio)
+DIAG_CMD=raMA;
+SPEC=001FF3C414BC;
+LIMIT_UP=0;//SFIS DATA index,can not be changed
+RESULT_TYPE=CHEK_WMAC_002G;
+ERR_CODE=DW00;
+ERR_CODE_DES=WL_CARD_0 can not be detected;
+UUT_CMD_TIME=0;//Wait operation finished time
+}

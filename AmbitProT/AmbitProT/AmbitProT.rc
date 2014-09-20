@@ -1,0 +1,763 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\AmbitProT.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\icon_AMBIT.ico"
+IDR_AmbitProTTYPE       ICON                    "res\\AmbitProTDoc.ico"
+IDI_WARN                ICON                    "res\\icon5.ico"
+IDI_AMBIT               ICON                    "res\\icon_AMBIT.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Modify",                      ID_EDIT_MODIFY
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Count",                       ID_VIEW_COUNT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About AmbitProT...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About AmbitProT"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "AmbitProT Version 1.1",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_DETAIL_LOG_DLG DIALOGEX 0, 0, 309, 276
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "1 -> LOG",IDC_BTN_SWITCH_SHOW,32,40,52,17
+    PUSHBUTTON      "2 -> LOG",IDC_BUTTON_TWO,175,41,52,18,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,2,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "FOXCONN"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "AmbitProT.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "AmbitProT.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DETAIL_LOG_DLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 273
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "AmbitProT\nMFG\nAmbitProT\n\n\nAmbitProT.Document\nAmbitProT.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "AmbitProT"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+    ID_VIEW_AUTOARRANGE     "Arrange icons on a grid."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_SMALLICON       "Display items by using small icons.\nSmall Icons"
+    ID_VIEW_LARGEICON       "Display items by using large icons.\nLarge Icons"
+    ID_VIEW_LIST            "Displays items in a list.\nList"
+    ID_VIEW_DETAILS         "Displays detailed information about each item in the window.\nDetails"
+    ID_VIEW_LINEUP          "Arranges icons in a grid."
+    ID_VIEW_BYNAME          "Sorts the icons alphabetically."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_FAIL                ICON                    "res\\ico00003.ico"
+IDI_PASS                ICON                    "res\\icon4.ico"
+IDI_PTLANGREEN1         ICON                    "res\\PTLANGREEN.ico"
+IDI_PTWANGREEN1         ICON                    "res\\PTWANGREEN.ico"
+IDI_FTLANGREEN1         ICON                    "res\\FTLANGREEN.ico"
+IDI_FTWANGREEN1         ICON                    "res\\FTWANGREEN.ico"
+IDI_GREEN1              ICON                    "res\\GREEN.ico"
+IDI_AMBER2              ICON                    "res\\AMBER.ico"
+IDI_SMO_OFF             ICON                    "res\\fail1.ico"
+IDI_EQUI_OFF            ICON                    "res\\smo_off1.ico"
+IDI_SFIS_OFF            ICON                    "res\\equi_off.ico"
+IDI_SMO_ON              ICON                    "res\\pass1.ico"
+IDI_SFIS_ON             ICON                    "res\\smo_on1.ico"
+IDI_EQUI_ON             ICON                    "res\\smo_on2.ico"
+IDI_PTS_ON              ICON                    "res\\sfis_on1.ico"
+IDI_PTS_OFF             ICON                    "res\\ico00001.ico"
+IDI_RTM_OFF             ICON                    "res\\pts_off1.ico"
+IDI_RTM_ON              ICON                    "res\\pts_on1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VIR_SMO DIALOGEX 0, 0, 255, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_WINDOWEDGE
+CAPTION "VIRTUAL-SMO"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_VIR_SMO_ITEM1,60,16,116,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VIR_SMO_ITEM2,60,41,116,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VIR_SMO_ITEM3,60,67,116,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VIR_SMO_ITEM4,60,94,116,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "SEND",IDC_VIR_SEND,193,35,50,14
+    PUSHBUTTON      "CANCEL",IDOK,193,74,50,14
+    LTEXT           "ITEM 1:",IDC_STATIC,27,18,26,8
+    LTEXT           "ITEM 2:",IDC_STATIC,27,43,26,8
+    LTEXT           "ITEM 3:",IDC_STATIC,27,69,26,8
+    LTEXT           "ITEM 4:",IDC_STATIC,27,96,26,8
+END
+
+IDD_EQUIPMENT_DLG DIALOGEX 0, 0, 380, 290
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "QUERY",IDC_BTN_QUERY,277,78,50,14
+    PUSHBUTTON      "CLEAR",IDC_BTN_CLEAR,277,139,50,14
+    CONTROL         "",IDC_EQUIP_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,227,276
+    EDITTEXT        IDC_EDEQUIP_PWD,281,62,71,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDEQUIP_USER,282,34,71,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "USER:",IDC_STATIC,249,36,21,8,NOT WS_VISIBLE
+    LTEXT           "PWD:",IDC_STATIC,251,65,19,8,NOT WS_VISIBLE
+END
+
+IDD_MAIN_CONTROL_PANEL DIALOGEX 0, 0, 462, 169
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Tester",IDC_BTN_SWTO_MT_DLG,105,62,56,14,WS_GROUP
+    PUSHBUTTON      "MYDAS",IDC_BTN_SWTO_MYDAS_DLG,105,109,56,14
+    PUSHBUTTON      "SFIS",IDC_BTN_SWTO_SFIS_DLG,104,93,56,14
+    PUSHBUTTON      "System Info",IDC_BTN_SWTO_TESTER,105,78,56,14,WS_GROUP
+    CTEXT           "",IDC_UUT_PNNAME,127,0,132,33,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "",IDC_STA_NAME,0,0,126,33,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    ICON            "",IDC_SMO_PICTURE,258,119,20,20,NOT WS_VISIBLE
+    CONTROL         "",IDC_EDIT_UPBORDER,"Static",SS_BLACKFRAME,0,108,78,1
+    CONTROL         "",IDC_EDIT_DNBORDER,"Static",SS_BLACKFRAME,0,98,90,1
+    GROUPBOX        "SMO LINK STATUS:",IDC_STATIC,193,57,250,58
+    CONTROL         "",IDC_BORDER2,"Static",SS_BLACKFRAME,0,74,91,1
+    CONTROL         "",IDC_BORDER3,"Static",SS_BLACKFRAME,0,85,88,1
+    CONTROL         "",IDC_BORDER1,"Static",SS_BLACKFRAME,0,60,93,1
+    CONTROL         "",IDC_BORDER4,"Static",SS_BLACKFRAME,0,119,80,1
+    CTEXT           "SMO OFF",IDC_SFIS_LINK,213,74,212,26,SS_CENTERIMAGE
+    CTEXT           "BARCODE",IDC_UUT_SFIS_INFO,261,11,132,22,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    LTEXT           "Please Scan:",IDC_STATIC_SCAN,261,1,117,10
+    LTEXT           "00:00",IDC_TIME,395,14,20,8
+    LTEXT           "UserID:----------",IDC_USER_ID,407,7,52,8
+    LTEXT           "LogIn",IDC_STATIC_IN,404,22,19,8
+    LTEXT           "LogOut",IDC_STATIC_OUT,427,17,24,8,WS_DISABLED
+END
+
+IDD_DIALOG_LED DIALOGEX 0, 0, 136, 93
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Ask"
+FONT 12, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Yes(&Y)",IDOK,19,72,33,14
+    PUSHBUTTON      "No(&N)",IDCANCEL,82,72,34,14
+    CONTROL         199,IDC_AMBER_PIC,"Static",SS_BITMAP | NOT WS_VISIBLE,12,9,112,34
+    CONTROL         200,IDC_GREEN_PIC,"Static",SS_BITMAP | NOT WS_VISIBLE,12,7,112,34
+    CONTROL         207,IDC_LED_OFF,"Static",SS_BITMAP | NOT WS_VISIBLE,12,8,112,34
+    CONTROL         204,IDC_PT_WAN,"Static",SS_BITMAP | NOT WS_VISIBLE,12,8,112,34
+    CONTROL         203,IDC_PT_LAN,"Static",SS_BITMAP | NOT WS_VISIBLE,12,7,112,34
+    CONTROL         202,IDC_FT_WAN,"Static",SS_BITMAP | NOT WS_VISIBLE,12,7,112,34
+    CONTROL         201,IDC_FT_LAN,"Static",SS_BITMAP | NOT WS_VISIBLE,12,7,112,34
+    CONTROL         208,IDC_DOWN_PIC,"Static",SS_BITMAP | NOT WS_VISIBLE,12,8,112,34
+    CONTROL         206,IDC_BLINK_PIC,"Static",SS_BITMAP | NOT WS_VISIBLE,12,9,112,34
+    CONTROL         IDI_PTS_OFF,IDC_ANALYSE_PIC,"Static",SS_BITMAP | NOT WS_VISIBLE,12,7,112,34
+END
+
+IDD_DIALOG_MAIN DIALOGEX 0, 0, 27, 361
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB1,"SysTabControl32",TCS_VERTICAL | TCS_BUTTONS | TCS_MULTILINE | 0x8,0,7,13,187
+    ICON            IDI_SFIS_OFF,IDC_PIC_SFIS,0,261,20,20,SS_NOTIFY
+    ICON            IDI_SMO_OFF,IDC_PIC_SMO,0,320,20,20,NOT WS_VISIBLE
+    ICON            IDI_EQUI_OFF,IDC_PIC_EQUIP,0,298,20,20
+    ICON            IDI_PTS_OFF,IDC_PIC_PTS,0,280,20,20
+    ICON            IDI_RTM_OFF,IDC_PIC_RTM,0,243,20,20,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_CONF DIALOGEX 0, 0, 281, 217
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Save",IDC_ITEM_MODIFY,34,31,56,22
+    PUSHBUTTON      "Save",IDC_ITEM_TWO,160,31,53,23,NOT WS_VISIBLE
+    CONTROL         "NULL",IDC_CHECK_ONE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,95,37,32,10
+    CONTROL         "NULL",IDC_CHECK_TWO,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,219,36,32,10
+END
+
+IDD_DIALOG_USER DIALOGEX 0, 0, 215, 140
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "LogIn"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_USER_ID,92,50,80,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,36,103,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,103,50,14
+    LTEXT           "EMP Number :",IDC_STATIC,40,52,51,8
+    LTEXT           "---------------------    Login    ---------------------",IDC_STATIC,36,13,155,8
+END
+
+IDD_DIALOG_RTM DIALOGEX 0, 0, 604, 377
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Software Version",IDC_STATIC,411,132,167,85
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,416,143,159,70
+    GROUPBOX        "Run Status",IDC_STATIC,220,25,174,83
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,226,36,162,66
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,417,35,156,67
+    GROUPBOX        "User Information",IDC_STATIC,412,24,166,83
+    GROUPBOX        "Test Result",IDC_STATIC,30,132,171,85
+    CONTROL         "",IDC_LIST4,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,34,143,163,69
+    GROUPBOX        "Link Status",IDC_STATIC,219,132,175,86
+    CONTROL         "",IDC_LIST5,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,223,143,166,71
+    GROUPBOX        "Host Information",IDC_STATIC,30,25,171,82
+    CONTROL         "",IDC_LIST6,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,35,37,160,65
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_VIR_SMO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_EQUIPMENT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 373
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_MAIN_CONTROL_PANEL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 461
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_DIALOG_LED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 129
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 20
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 354
+    END
+
+    IDD_DIALOG_CONF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_DIALOG_USER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_DIALOG_RTM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 596
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 370
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_DIALOGOFF      HTML                    "DialogOff.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_AMBER               BITMAP                  "res\\AMBER.bmp"
+IDB_GREEN               BITMAP                  "res\\GREEN.bmp"
+IDB_FTLANGREEN          BITMAP                  "res\\FTLANGREEN.bmp"
+IDB_FTWANGREEN          BITMAP                  "res\\FTWANGREEN.bmp"
+IDB_PTLANGREEN          BITMAP                  "res\\PTLANGREEN.bmp"
+IDB_PTWANGREEN          BITMAP                  "res\\PTWANGREEN.bmp"
+IDB_BLINK               BITMAP                  "res\\BLINK.bmp"
+IDB_OFF                 BITMAP                  "res\\OFF.bmp"
+IDB_PANELDOWN           BITMAP                  "res\\PANELDOWN.bmp"
+IDB_ANALYSE             BITMAP                  "res\\ANALYSE.bmp"
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN_TEST_PANEL DIALOGEX 0, 0, 352, 270
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CTEXT           "PASSED",IDC_BIG_RESULT,9,9,286,43,SS_NOTIFY | SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "TEST",IDC_BTN_START_TEST,239,143,64,19,NOT WS_VISIBLE
+    PUSHBUTTON      "DETAIL",IDC_BTN_SHOWLOG,239,166,64,19,NOT WS_VISIBLE
+    PUSHBUTTON      "SFIS",IDC_BTN_SFIS,239,189,64,19,NOT WS_VISIBLE
+    LTEXT           "Static",IDC_STC_TESTTIME,14,73,39,14
+    LTEXT           "Static",IDC_STC_CURRENT_ITEM,13,110,34,17
+    LTEXT           "Static",IDC_STC_ERROR_CODE,14,92,28,12
+    LTEXT           "PASSED",IDC_STC_SMALL_RESULT,116,52,179,17,SS_NOTIFY | SS_CENTERIMAGE | NOT WS_VISIBLE,WS_EX_CLIENTEDGE
+    LTEXT           "Equipment usage is under control",IDC_EQUIP_STATUS,42,197,139,12,NOT WS_VISIBLE
+    ICON            "",IDC_EQUIP_PICTURE,12,190,20,20,NOT WS_VISIBLE
+    GROUPBOX        "Equipment status",IDC_STATIC_ES,5,178,183,43,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC,6,140,219,84,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC,4,0,299,137,NOT WS_VISIBLE
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,96,74,132,53
+    CTEXT           "Static",IDC_ITEM,251,96,19,8,NOT WS_VISIBLE,WS_EX_TRANSPARENT
+    LTEXT           "Static",IDC_SN,15,56,50,13
+    LTEXT           "",IDC_ERRORCODE,244,114,46,8
+END
+
+IDD_TESTER_DLG DIALOGEX 0, 0, 453, 418
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "EQUIP CLOSE",IDC_EQUIP_DLG_CLOSE,396,222,50,14
+    GROUPBOX        "FIXTURE",IDC_STATIC,7,7,273,366
+    GROUPBOX        "e-Sop",IDC_STATIC,339,116,107,239,NOT WS_VISIBLE
+    PUSHBUTTON      "EQUIP OPEN",IDC_EQUIP_DLG_OPEN,396,174,50,14
+    LTEXT           "Utilization 1 : ",IDC_TESTER_UTI,283,15,161,16,NOT WS_VISIBLE
+    LTEXT           "Utilization 2 : ",IDC_TESTER_UTI2,283,36,161,16,NOT WS_VISIBLE
+END
+
+IDD_SFIS_DLG DIALOGEX 0, 0, 392, 218
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_DCT,19,31,357,53,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_SFIS_SHOW,19,114,355,81,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "SFIS<= =>UI:",IDC_STATIC_SFIS,18,99,49,8
+    LTEXT           "SFIS INDICATION:",IDC_STATIC_INDI,33,9,145,19
+    ICON            "",IDC_LINK_PICTURE,353,88,20,20,NOT WS_VISIBLE
+    PUSHBUTTON      "Debug1",IDC_BUTTON1,93,91,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Debug2",IDC_BUTTON2,162,91,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "VIRT SMO",IDC_VIRT_OPEN,230,91,50,14
+END
+
+IDD_MYDAS_DLG DIALOGEX 0, 0, 356, 252
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "STATUS:",IDC_STATIC,45,43,32,8
+    LTEXT           "Static",IDC_STC_MYDAS_STATUS,83,43,257,12
+    CTEXT           "Static",IDC_STC_CONNECT_FLAG,41,16,81,19,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_STC_SEND_RECORD_NUM,155,23,98,13
+    GROUPBOX        "MYDAS INFORMATION",IDC_STATIC,34,7,315,63
+    PUSHBUTTON      "Show Log",IDC_BUTTON_LOG,33,81,50,21
+    LTEXT           "Pls Select Date:",IDC_STATIC,95,88,51,8
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,147,85,100,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN_TEST_PANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 303
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_TESTER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 446
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 411
+    END
+
+    IDD_SFIS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_MYDAS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 349
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\AmbitProT.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
